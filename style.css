@@ -21,7 +21,7 @@ main{
 .left{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 20% 78%;
+    grid-template-rows: 21% 78%;
     padding: 0 5%;
 }
 
