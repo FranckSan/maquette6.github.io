@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: Century Gothic;
+}
+main{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.left{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 78%;
+    padding: 0 5%;
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 3%;
+    top: 0;
+    border-radius: 5px;
+    background-color: #407BFF;
+}
+.icon{
+    width: 100%;
+}
+
+
+.left_top{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.left_bottom{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 19%;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.input{
+    padding-left: 7px;
+    height: 10%;
+    border-radius: 7px;
+    border: 2px solid red;
+    outline: none;
+}
+#cond{
+    display: flex;
+    align-items: center;
+    height: 10%;
+}
+#box{
+    font-weight: bolder;
+}
+
+
+
+button{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    border-radius: 7px;
+    font-size: 1.5vw;
+    background: rgb(255, 0, 34);
+    text-transform: uppercase;
+    font-family: Century Gothic;
+    color: ivory;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: ivory;
+    font-weight: bold;
+    color: rgb(255, 0, 34);
+    border: 2px solid rgb(255, 0, 34);
+}
+
+
+
+
+
+
+
+
+
+
+.right{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+.img_right{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+    .left{
+        display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 27% 68%;
+    padding: 0 5%;
+    }
+    button{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+    }
+    .left_top{
+        display: flex;
+        flex-flow: wrap column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    h1{
+        font-size: 27px;
+    }
+    .right{
+        display: none;
+    }
+}
+@media screen and (max-width: 320px){
+
+    label{
+        text-align: center;
+    }
+}
